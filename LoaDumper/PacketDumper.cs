@@ -468,7 +468,7 @@ namespace LoaDumper
             sb.AppendLine("{");
             sb.AppendLine("    public enum OpCodes_" + region + " : UInt16");
             sb.AppendLine("    {");
-            //var orig = File.ReadAllBytes(@"C:\Users\andy\Downloads\lostark\lostark.exe");
+            //var orig = File.ReadAllBytes(@"C:\Users\Downloads\lostark\lostark.exe");
             //var process = Process.Start(@"C:\Program Files (x86)\Steam\steamapps\common\Lost Ark\Binaries\Win64\LOSTARK.exe", "-launch_from_dev_launcher -AuthKey=");
             if (region == Region.Korea) process = Process.Start(gameDir + @"Binaries\Win64\LOSTARKkr.exe", "-launch_from_dev_launcher -AuthKey=");
             else process = Process.Start(gameDir + @"Binaries\Win64\LOSTARK.exe", "-launch_from_dev_launcher -AuthKey=");
